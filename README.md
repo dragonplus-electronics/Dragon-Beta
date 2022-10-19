@@ -26,4 +26,6 @@ The last area for now is improvements to the keyboard interface. The original Dr
 
 The boards which are available at this repository are the slightly updated ones, which contain some ease-of-use modifications. Some of those are to allow Phill's add-on components to be plugged in more easily (e.g. header pins for control signals etc.), whilst others are about completing the expansion port wiring up, and adding a few useful control signals to that as well.
 
+## Disclaimer
+
 Please note that this final board revision has not been produced or verified, but all electrical rules have been validated in KiCad, and although the changes have involved some fairly detailed re-tracing, electrically the changes are minor. Thus it is believed that these boards will work just fine if produced and built - but this is without any guarantee or warranty from any of the development team.
