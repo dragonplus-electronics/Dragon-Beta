@@ -1,7 +1,7 @@
 # Dragon-Beta
 Reverse engineered PCB of the never-released 1984 Dragon Beta machine from Dragon Data
 
-## ackground
+## Background
 The Dragon Beta was a machine in development at the time of Dragon Data's demise in 1984. Only two boards are known to still exist - although one of those has not been verified for over ten years. The one board which remains is in the care of the Dragon Data archive at http://www.dragondata.co.uk. It is this latter board which has formed the basis for this current reverse engineering project. Richard, from the Dragon Data archive had made some very clear photographs of his Dragon Beta board before, during and after it's restoration. That board was returned to working order, but understandably Richard was not keen to continually use such a rare piece of computing history.
 
 Initially, and somewhat secretly, I (John Whitworth) began to trace the circuitry using Paint Shop Pro and KiCad. That is, I'd have the high quality images of the desoldered PCB on the screen, and would slowly build the circuit in KiCad, whilst drawing coloured bold lines over board traces that I'd already dealt with on the schematic in KiCad. The process took, in all, about 6 months.
