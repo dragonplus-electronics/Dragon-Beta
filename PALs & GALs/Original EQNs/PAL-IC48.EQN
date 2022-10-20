@@ -1,0 +1,39 @@
+; JED2EQN -- JEDEC file to Boolean Equations disassembler (Version V063)
+; Copyright (c) National Semiconductor Corporation 1990-1993
+; Disassembled from C:\OPALJR\BETA\PAL-IC48.jed. Date: 2-3-122
+
+chip PAL-IC48 PAL16L8
+
+i1=1 i2=2 i3=3 i4=4 i5=5 i6=6 i7=7 i8=8 i9=9 GND=10 i11=11 o12=12 
+o13=13 o14=14 i15=15 i16=16 f17=17 f18=18 o19=19 VCC=20 
+
+equations
+
+/o19 = /i16
+    + /i15
+o19.oe = f18 * f17
+/f18 = /i3 * /i4 * i15
+f18.oe = vcc
+/f17 = i3 * /i4 * i15
+f17.oe = vcc
+/o14 = /i2 * /i1 * /i11
+    + /i2 * i1 * /i7
+    + i2 * /i1 * /i7
+    + i2 * i1 * /i11
+    + /i7 * /i11
+    + /i15
+o14.oe = f18 * f17
+/o13 = /i2 * /i1 * /i9
+    + /i2 * i1 * /i6
+    + i2 * /i1 * /i6
+    + i2 * i1 * /i9
+    + /i6 * /i9
+    + /i15
+o13.oe = f18 * f17
+/o12 = /i2 * /i1 * /i8
+    + /i2 * i1 * /i5
+    + i2 * /i1 * /i5
+    + i2 * i1 * /i8
+    + /i5 * /i8
+    + /i15
+o12.oe = f18 * f17

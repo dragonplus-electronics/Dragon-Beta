@@ -1,0 +1,47 @@
+; JED2EQN -- JEDEC file to Boolean Equations disassembler (Version V063)
+; Copyright (c) National Semiconductor Corporation 1990-1993
+; Disassembled from C:\OPALJR\BETA\PAL-IC31.jed. Date: 2-3-122
+
+chip PAL-IC31 PAL16L8
+
+i1=1 i2=2 i3=3 i4=4 i5=5 i6=6 i7=7 GND=10 o12=12 o13=13 f14=14 
+o15=15 f16=16 f17=17 o18=18 o19=19 VCC=20 
+
+equations
+
+/o19 = i2
+    + /i1
+o19.oe = vcc
+/o18 = /i2 * i1 * /i3 * i4 * /i5
+    + i3 * /i4 * /i5
+    + i2 * /i4 * /i5
+    + /i1 * /i4 * /i5
+    + i2 * i3 * i5
+    + /i1 * i3 * i5
+    + /i2 * i1 * /i3 * i5
+o18.oe = vcc
+/f17 = i6 * i7
+    + /i1 * /i6 * /i7
+    + /f17 * /i6 * i7
+f17.oe = vcc
+/f16 = /i2 * /i1 * /i3 * i4 * i6 * /i7
+    + i2 * i1 * /i3 * i4 * /i6 * /i7
+    + /i2 * /i1 * /i3 * i4 * /i6 * /i7
+    + /f16 * i7
+f16.oe = vcc
+/o15 = /i2 * /i1
+    + i2 * i1
+o15.oe = vcc
+/f14 = f17 * /f16
+    + /f17 * /f14
+f14.oe = vcc
+/o13 = i2 * i1 * i3
+    + /i2 * i3
+    + i2 * /i1 * /i3
+    + i1 * i3
+o13.oe = vcc
+/o12 = i2 * /i3
+    + /i2 * /i1 * /i3
+    + /i2 * i1 * i3
+    + /i1 * /i3
+o12.oe = vcc
