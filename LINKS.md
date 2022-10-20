@@ -28,4 +28,7 @@ http://archive.worldofdragon.org/archive/index.php?dir=Software/Dragon/Dragon%20
 
 https://archive.worldofdragon.org/index.php?title=Motherboard_Pictures#Dragon_Beta  - Motherboard Images
 
+## Facebook Group
+
+https://www.facebook.com/groups/dragon32
 
